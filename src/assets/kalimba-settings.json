@@ -1,0 +1,155 @@
+[
+    {
+        "letter": "D",
+        "no": 2,
+        "frequency": 1174,
+        "order": 1,
+        "height": 35,
+        "note": "A",
+        "key": "1"
+    },
+    {
+        "letter": "B",
+        "no": 7,
+        "frequency": 987.7,
+        "order": 2,
+        "height": 40,
+        "note": "Ab",
+        "key": "2"
+    },
+    {
+        "letter": "G",
+        "no": 5,
+        "frequency": 783.9,
+        "order": 3,
+        "height": 45,
+        "note": "B",
+        "key": "3"
+    },
+    {
+        "letter": "E",
+        "no": 3,
+        "frequency": 659.2,
+        "order": 4,
+        "height": 50,
+        "note": "Bb",
+        "key": "4"
+    },
+    {
+        "letter": "C",
+        "no": 1,
+        "frequency": 523.2,
+        "order": 5,
+        "height": 55,
+        "note": "C",
+        "key": "5"
+    },
+    {
+        "letter": "A",
+        "no": 6,
+        "frequency": 440.0,
+        "order": 6,
+        "height": 60,
+        "note": "D",
+        "key": "6"
+    },
+    {
+        "letter": "F",
+        "no": 4,
+        "frequency": 349.2,
+        "order": 7,
+        "height": 65,
+        "note": "Db",
+        "key": "7"
+    },
+    {
+        "letter": "D",
+        "no": 2,
+        "frequency": 293.6,
+        "order": 8,
+        "height": 70,
+        "note": "E",
+        "key": "8"
+    },
+    {
+        "letter": "C",
+        "no": 1,
+        "frequency": 261.6,
+        "order": 9,
+        "height": 75,
+        "note": "Eb",
+        "key": "9"
+    },
+    {
+        "letter": "E",
+        "no": 3,
+        "frequency": 329.6,
+        "order": 10,
+        "height": 70,
+        "note": "F",
+        "key": "q"
+    },
+    {
+        "letter": "G",
+        "no": 5,
+        "frequency": 391.9,
+        "order": 11,
+        "height": 65,
+        "note": "G",
+        "key": "w"
+    },
+    {
+        "letter": "B",
+        "no": 7,
+        "frequency": 493.8,
+        "order": 12,
+        "height": 60,
+        "note": "Gb",
+        "key": "e"
+    },
+    {
+        "letter": "D",
+        "no": 2,
+        "frequency": 587.3,
+        "order": 13,
+        "height": 55,
+        "note": "A",
+        "key": "r"
+    },
+    {
+        "letter": "F",
+        "no": 4,
+        "frequency": 698.4,
+        "order": 14,
+        "height": 50,
+        "note": "Ab",
+        "key": "t"
+    },
+    {
+        "letter": "A",
+        "no": 6,
+        "frequency": 880.0,
+        "order": 15,
+        "height": 45,
+        "note": "B",
+        "key": "y"
+    },
+    {
+        "letter": "C",
+        "no": 1,
+        "frequency": 1046,
+        "order": 16,
+        "height": 40,
+        "note": "Bb",
+        "key": "u"
+    },
+    {
+        "letter": "E",
+        "no": 3,
+        "frequency": 1318,
+        "order": 17,
+        "height": 35,
+        "note": "C",
+        "key": "ı"
+    }
+]

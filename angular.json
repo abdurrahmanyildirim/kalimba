@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "calimba-world": {
+    "kalimba": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/calimba-world",
+            "outputPath": "dist/kalimba",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -44,6 +44,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "baseHref": "./",
               "budgets": [
                 {
                   "type": "initial",
@@ -62,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "calimba-world:build"
+            "browserTarget": "kalimba:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "calimba-world:build:production"
+              "browserTarget": "kalimba:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "calimba-world:build"
+            "browserTarget": "kalimba:build"
           }
         },
         "test": {
@@ -110,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "calimba-world:serve"
+            "devServerTarget": "kalimba:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "calimba-world:serve:production"
+              "devServerTarget": "kalimba:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "calimba-world"
+  "defaultProject": "kalimba"
 }
