@@ -1,6 +1,6 @@
 <div class="container">
   <div class="settings">
-    <button class="button" (click)="this.modal.style.display = 'block'">Kullanım Kılavuzu</button>
+    <button class="button" (click)="this.modal.style.display = 'flex'">Bilgisayar Kullanımı İçin</button>
     <button class="button" (click)="showLetters=!showLetters">
       <span *ngIf="showLetters">
         Sayıları Göster
@@ -27,7 +27,7 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close" (click)="modal.style.display='none'">&times;</span>
-      <h2>Kullanım Rehberi</h2>
+      <h3>Kullanım Rehberi</h3>
     </div>
     <div class="modal-body">
       <p>Kalimbayı çalmak için aşağıdaki tuşları kullanabilir veya maus ile kendiniz tıklayabilirsiniz.</p>

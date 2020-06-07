@@ -7,14 +7,14 @@ export class ClickDirective {
     // tslint:disable-next-line: no-output-on-prefix
     @Output() onClicked: EventEmitter<any> = new EventEmitter();
 
-    @HostBinding('style.background') public background = '#C0C0C0';
+    @HostBinding('style.background') public background = '';
 
     @HostListener('click', ['$event']) public onClick(evt: DragEvent) {
         evt.preventDefault();
         evt.stopPropagation();
-        this.background = 'rgb(74, 74, 197)';
+        this.background = '#ccc';
         setTimeout(() => {
-            this.background = '#C0C0C0';
+            this.background = '';
         }, 200);
     }
 }

@@ -4,7 +4,7 @@
         "no": 2,
         "frequency": 1174,
         "order": 1,
-        "height": 35,
+        "height": 40,
         "note": "D2-1",
         "key": "1"
     },
@@ -13,7 +13,7 @@
         "no": 7,
         "frequency": 987.7,
         "order": 2,
-        "height": 40,
+        "height": 45,
         "note": "B7-2",
         "key": "2"
     },
@@ -22,7 +22,7 @@
         "no": 5,
         "frequency": 783.9,
         "order": 3,
-        "height": 45,
+        "height": 50,
         "note": "G5-3",
         "key": "3"
     },
@@ -31,7 +31,7 @@
         "no": 3,
         "frequency": 659.2,
         "order": 4,
-        "height": 50,
+        "height": 55,
         "note": "E3-4",
         "key": "4"
     },
@@ -40,7 +40,7 @@
         "no": 1,
         "frequency": 523.2,
         "order": 5,
-        "height": 55,
+        "height": 60,
         "note": "C1-5",
         "key": "5"
     },
@@ -49,7 +49,7 @@
         "no": 6,
         "frequency": 440.0,
         "order": 6,
-        "height": 60,
+        "height": 65,
         "note": "A6-6",
         "key": "6"
     },
@@ -58,7 +58,7 @@
         "no": 4,
         "frequency": 349.2,
         "order": 7,
-        "height": 65,
+        "height": 70,
         "note": "F4-7",
         "key": "7"
     },
@@ -67,7 +67,7 @@
         "no": 2,
         "frequency": 293.6,
         "order": 8,
-        "height": 70,
+        "height": 75,
         "note": "D2-8",
         "key": "8"
     },
@@ -76,7 +76,7 @@
         "no": 1,
         "frequency": 261.6,
         "order": 9,
-        "height": 75,
+        "height": 80,
         "note": "C1-9",
         "key": "9"
     },
@@ -85,7 +85,7 @@
         "no": 3,
         "frequency": 329.6,
         "order": 10,
-        "height": 70,
+        "height": 75,
         "note": "E3-10",
         "key": "q"
     },
@@ -94,7 +94,7 @@
         "no": 5,
         "frequency": 391.9,
         "order": 11,
-        "height": 65,
+        "height": 70,
         "note": "G5-11",
         "key": "w"
     },
@@ -103,7 +103,7 @@
         "no": 7,
         "frequency": 493.8,
         "order": 12,
-        "height": 60,
+        "height": 65,
         "note": "B7-12",
         "key": "e"
     },
@@ -112,7 +112,7 @@
         "no": 2,
         "frequency": 587.3,
         "order": 13,
-        "height": 55,
+        "height": 60,
         "note": "D2-13",
         "key": "r"
     },
@@ -121,7 +121,7 @@
         "no": 4,
         "frequency": 698.4,
         "order": 14,
-        "height": 50,
+        "height": 55,
         "note": "F4-14",
         "key": "t"
     },
@@ -130,7 +130,7 @@
         "no": 6,
         "frequency": 880.0,
         "order": 15,
-        "height": 45,
+        "height": 50,
         "note": "A6-15",
         "key": "y"
     },
@@ -139,7 +139,7 @@
         "no": 1,
         "frequency": 1046,
         "order": 16,
-        "height": 40,
+        "height": 45,
         "note": "C1-16",
         "key": "u"
     },
@@ -148,7 +148,7 @@
         "no": 3,
         "frequency": 1318,
         "order": 17,
-        "height": 35,
+        "height": 40,
         "note": "E3-17",
         "key": "ı"
     }
