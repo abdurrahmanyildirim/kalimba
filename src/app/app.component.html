@@ -1,7 +1,14 @@
 <div class="container">
   <div class="settings">
     <button class="button" (click)="this.modal.style.display = 'block'">Kullanım Kılavuzu</button>
-    <button class="button" (click)="showLetters=!showLetters">Notaları Değiştir</button>
+    <button class="button" (click)="showLetters=!showLetters">
+      <span *ngIf="showLetters">
+        Sayıları Göster
+      </span>
+      <span *ngIf="!showLetters">
+        Harfleri Göster
+      </span>
+    </button>
   </div>
   <div class="content">
     <div class="note" *ngFor="let setting of kalimbaSettings" appClick id="{{setting.key}}"

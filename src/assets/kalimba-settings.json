@@ -5,7 +5,7 @@
         "frequency": 1174,
         "order": 1,
         "height": 35,
-        "note": "A",
+        "note": "D2-1",
         "key": "1"
     },
     {
@@ -14,7 +14,7 @@
         "frequency": 987.7,
         "order": 2,
         "height": 40,
-        "note": "Ab",
+        "note": "B7-2",
         "key": "2"
     },
     {
@@ -23,7 +23,7 @@
         "frequency": 783.9,
         "order": 3,
         "height": 45,
-        "note": "B",
+        "note": "G5-3",
         "key": "3"
     },
     {
@@ -32,7 +32,7 @@
         "frequency": 659.2,
         "order": 4,
         "height": 50,
-        "note": "Bb",
+        "note": "E3-4",
         "key": "4"
     },
     {
@@ -41,7 +41,7 @@
         "frequency": 523.2,
         "order": 5,
         "height": 55,
-        "note": "C",
+        "note": "C1-5",
         "key": "5"
     },
     {
@@ -50,7 +50,7 @@
         "frequency": 440.0,
         "order": 6,
         "height": 60,
-        "note": "D",
+        "note": "A6-6",
         "key": "6"
     },
     {
@@ -59,7 +59,7 @@
         "frequency": 349.2,
         "order": 7,
         "height": 65,
-        "note": "Db",
+        "note": "F4-7",
         "key": "7"
     },
     {
@@ -68,7 +68,7 @@
         "frequency": 293.6,
         "order": 8,
         "height": 70,
-        "note": "E",
+        "note": "D2-8",
         "key": "8"
     },
     {
@@ -77,7 +77,7 @@
         "frequency": 261.6,
         "order": 9,
         "height": 75,
-        "note": "Eb",
+        "note": "C1-9",
         "key": "9"
     },
     {
@@ -86,7 +86,7 @@
         "frequency": 329.6,
         "order": 10,
         "height": 70,
-        "note": "F",
+        "note": "E3-10",
         "key": "q"
     },
     {
@@ -95,7 +95,7 @@
         "frequency": 391.9,
         "order": 11,
         "height": 65,
-        "note": "G",
+        "note": "G5-11",
         "key": "w"
     },
     {
@@ -104,7 +104,7 @@
         "frequency": 493.8,
         "order": 12,
         "height": 60,
-        "note": "Gb",
+        "note": "B7-12",
         "key": "e"
     },
     {
@@ -113,7 +113,7 @@
         "frequency": 587.3,
         "order": 13,
         "height": 55,
-        "note": "A",
+        "note": "D2-13",
         "key": "r"
     },
     {
@@ -122,7 +122,7 @@
         "frequency": 698.4,
         "order": 14,
         "height": 50,
-        "note": "Ab",
+        "note": "F4-14",
         "key": "t"
     },
     {
@@ -131,7 +131,7 @@
         "frequency": 880.0,
         "order": 15,
         "height": 45,
-        "note": "B",
+        "note": "A6-15",
         "key": "y"
     },
     {
@@ -140,7 +140,7 @@
         "frequency": 1046,
         "order": 16,
         "height": 40,
-        "note": "Bb",
+        "note": "C1-16",
         "key": "u"
     },
     {
@@ -149,7 +149,7 @@
         "frequency": 1318,
         "order": 17,
         "height": 35,
-        "note": "C",
+        "note": "E3-17",
         "key": "ı"
     }
 ]
