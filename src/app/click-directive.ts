@@ -9,12 +9,13 @@ export class ClickDirective {
 
     @HostBinding('style.background') public background = '';
 
-    @HostListener('click', ['$event']) public onClick(evt: DragEvent) {
+    @HostListener('click', ['$event']) public onClick(evt: Event) {
         evt.preventDefault();
         evt.stopPropagation();
         this.background = '#ccc';
-        setTimeout(() => {
+        const timeOut = setTimeout(() => {
             this.background = '';
+            clearTimeout(timeOut);
         }, 200);
     }
 }
