@@ -1,24 +1,26 @@
 <div class="container">
-  <div class="settings">
-    <button class="button" (click)="this.modal.style.display = 'flex'">Bilgisayar Kullanımı İçin</button>
-    <button class="button" (click)="showLetters=!showLetters">
-      <span *ngIf="showLetters">
-        Sayıları Göster
-      </span>
-      <span *ngIf="!showLetters">
-        Harfleri Göster
-      </span>
-    </button>
-  </div>
   <div class="content">
-    <div class="note" *ngFor="let setting of kalimbaSettings" appClick id="{{setting.key}}"
-      (click)="playNote(setting.note)" [ngStyle]="{'height':setting.height+ '%'}">
-      <span *ngIf="showLetters">
-        {{setting.letter}}
-      </span>
-      <span *ngIf="!showLetters">
-        {{setting.no}}
-      </span>
+    <div class="notes">
+      <div class="note" *ngFor="let setting of kalimbaSettings" id="{{setting.key}}"
+        (click)="playNote(setting.note,setting.key)" [ngStyle]="{'height':setting.height+ '%'}">
+        <span *ngIf="showLetters">
+          {{setting.letter}}
+        </span>
+        <span *ngIf="!showLetters">
+          {{setting.no}}
+        </span>
+      </div>
+    </div>
+    <div class="settings">
+      <button class="button" *ngIf="!isPhoneUser" (click)="this.modal.style.display = 'flex'">Kullanım Rehberi</button>
+      <button class="button" (click)="showLetters=!showLetters">
+        <span *ngIf="showLetters">
+          {{chosenText.showNumbers}}
+        </span>
+        <span *ngIf="!showLetters">
+          {{chosenText.showLetters}}
+        </span>
+      </button>
     </div>
   </div>
 </div>
@@ -27,11 +29,11 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close" (click)="modal.style.display='none'">&times;</span>
-      <h3>Kullanım Rehberi</h3>
+      <h3>{{chosenText.header}}</h3>
     </div>
     <div class="modal-body">
-      <p>Kalimbayı çalmak için aşağıdaki tuşları kullanabilir veya maus ile kendiniz tıklayabilirsiniz.</p>
-      <p>Çalmak için tuşlar sırası ile => 1 2 3 4 5 6 7 8 9 q w e r t y u ı </p>
+      <p>{{chosenText.description}}</p>
+      <p>{{chosenText.keys}}</p>
     </div>
   </div>
 </div>

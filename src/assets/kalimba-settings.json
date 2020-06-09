@@ -87,7 +87,7 @@
         "order": 10,
         "height": 75,
         "note": "E3-10",
-        "key": "q"
+        "key": "s"
     },
     {
         "letter": "G",
@@ -96,7 +96,7 @@
         "order": 11,
         "height": 70,
         "note": "G5-11",
-        "key": "w"
+        "key": "d"
     },
     {
         "letter": "B",
@@ -105,7 +105,7 @@
         "order": 12,
         "height": 65,
         "note": "B7-12",
-        "key": "e"
+        "key": "f"
     },
     {
         "letter": "D",
@@ -114,7 +114,7 @@
         "order": 13,
         "height": 60,
         "note": "D2-13",
-        "key": "r"
+        "key": "g"
     },
     {
         "letter": "F",
@@ -123,7 +123,7 @@
         "order": 14,
         "height": 55,
         "note": "F4-14",
-        "key": "t"
+        "key": "h"
     },
     {
         "letter": "A",
@@ -132,7 +132,7 @@
         "order": 15,
         "height": 50,
         "note": "A6-15",
-        "key": "y"
+        "key": "j"
     },
     {
         "letter": "C",
@@ -141,7 +141,7 @@
         "order": 16,
         "height": 45,
         "note": "C1-16",
-        "key": "u"
+        "key": "k"
     },
     {
         "letter": "E",
@@ -150,6 +150,6 @@
         "order": 17,
         "height": 40,
         "note": "E3-17",
-        "key": "ı"
+        "key": "l"
     }
 ]
