@@ -16,19 +16,20 @@ export class AppComponent implements AfterViewInit {
   modal: HTMLElement;
   isPhoneUser: boolean;
   chosenText: any;
+  lastTouchedElement: HTMLElement;
 
   trTexts = {
     showNumbers: 'Sayıları Göster',
     showLetters: 'Harfleri Göster',
     usage: 'Kullanım',
     header: 'Kullanım Rehberi',
-    description: 'Fare ile tıklayabilir veya aşağıdaki tuşları kullanabilirsiniz.',
+    description: 'Maus ile tıklayabilir veya aşağıdaki tuşları kullanabilirsiniz.',
     keys: '1 2 3 4 5 6 7 8 9 s d f g h j k l'
   };
 
   enTexts = {
     showNumbers: 'Show Numbers',
-    showLetters: 'Hafleri Göster',
+    showLetters: 'Show Letters',
     usage: 'Usage',
     header: 'Usage Guide',
     description: 'You can click with mouse or you can use keys at below.',
@@ -40,18 +41,22 @@ export class AppComponent implements AfterViewInit {
       this.kalimbaSettings = settings as Kalimba[];
       this.loadNotes(settings as Kalimba[]);
     });
-    this.keyListener();
     this.detectDevice();
     this.detectLanguage();
   }
 
   ngAfterViewInit(): void {
     this.modal = document.getElementById('myModal');
-    window.addEventListener('click', (event) => {
-      if (event.target === this.modal) {
-        this.modal.style.display = 'none';
-      }
-    });
+    if (!this.isPhoneUser) {
+      window.addEventListener('click', (event) => {
+        if (event.target === this.modal) {
+          this.modal.style.display = 'none';
+        }
+      });
+      this.keyListener();
+    } else {
+      this.touchListener();
+    }
   }
 
   async playNote(note, key) {
@@ -90,6 +95,29 @@ export class AppComponent implements AfterViewInit {
   loadNotes(settings: Kalimba[]) {
     settings.forEach(setting => {
       createjs.Sound.registerSound('assets/notes/' + setting.note + '.mp3', setting.note);
+    });
+  }
+
+  touchListener() {
+    window.addEventListener('touchmove', (event: any) => {
+      const x = event.touches[0].clientX;
+      const y = event.touches[0].clientY;
+      const touchedElement = document.elementFromPoint(x, y) as HTMLElement;
+      if (touchedElement.classList.contains('touched')) {
+        if (touchedElement.tagName === 'SPAN') {
+          if (touchedElement.parentElement !== this.lastTouchedElement) {
+            touchedElement.parentElement.click();
+            this.lastTouchedElement = touchedElement.parentElement;
+          }
+        } else {
+          if (touchedElement !== this.lastTouchedElement) {
+            touchedElement.click();
+            this.lastTouchedElement = touchedElement;
+          }
+        }
+      } else {
+        this.lastTouchedElement = touchedElement;
+      }
     });
   }
 }

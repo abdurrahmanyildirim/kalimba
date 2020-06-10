@@ -1,19 +1,20 @@
 <div class="container">
   <div class="content">
     <div class="notes">
-      <div class="note" *ngFor="let setting of kalimbaSettings" id="{{setting.key}}"
+      <div class="note touched" *ngFor="let setting of kalimbaSettings" id="{{setting.key}}"
         (click)="playNote(setting.note,setting.key)" [ngStyle]="{'height':setting.height+ '%'}">
-        <span *ngIf="showLetters">
+        <span *ngIf="showLetters" class="touched">
           {{setting.letter}}
         </span>
-        <span *ngIf="!showLetters">
+        <span *ngIf="!showLetters" class="touched">
           {{setting.no}}
         </span>
       </div>
     </div>
     <div class="settings">
-      <button class="button" *ngIf="!isPhoneUser" (click)="this.modal.style.display = 'flex'">Kullanım Rehberi</button>
-      <button class="button" (click)="showLetters=!showLetters">
+      <button class="button" *ngIf="!isPhoneUser"
+        (click)="this.modal.style.display = 'flex'">{{chosenText.usage}}</button>
+      <button class="button" id="change-buton" (click)="showLetters=!showLetters">
         <span *ngIf="showLetters">
           {{chosenText.showNumbers}}
         </span>
